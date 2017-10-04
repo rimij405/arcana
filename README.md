@@ -10,4 +10,5 @@ The description for the project will come here.
 
 ### Developers
 - Ian Effendi {@[rimij405](https://github.com/rimij405)}
+- Christopher Katcher {@[cak1352](https://github.com/Chris-Katcher)}
 - {The name of the other developers, followed by their git usernames will go here}.
