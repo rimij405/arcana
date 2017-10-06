@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UI.UIManager;
+using UI.UIManagement;
 using Game.GameManager;
 using Input.InputManager;
 using System.Collections;

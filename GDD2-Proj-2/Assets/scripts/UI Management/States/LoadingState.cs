@@ -6,12 +6,14 @@ using System.Text;
 namespace UI.UIManagement
 {
     /**
-      * class StateManager implements the management of states of the game.
-      * It will display the states that should be displayed based on inputs
-      * from users and triggers from the game.
+      * class LoadingState implements the state of the game when the game objects for
+      * the next screen are loading. It will display a screen object called "LoadingScreen" and
+      * update frames as needed. When Game Object finish loading
+      * the StageManager will display the new screen.
       **/
-    class StateManager : State
+    class LoadingState : State
     {
+        
         public StateManager m_stateManager { get; set; }
         public int m_stateID { get; set; }
         public bool m_stateLoaded { get; set; }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace UI.UIManager
+namespace UI.UIManagement
 {
     interface Screen
     {

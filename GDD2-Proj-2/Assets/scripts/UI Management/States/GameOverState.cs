@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 
 namespace UI.UIManagement
-{
+{ 
     /**
-      * class StateManager implements the management of states of the game.
-      * It will display the states that should be displayed based on inputs
-      * from users and triggers from the game.
-      **/
-    class StateManager : State
+     * class CameOverState implements the state of the game when the end of the game
+     * is triggered. It will display a screen object called "GameOverScreen" and
+     * update frames as needed. When inputs are triggered to change the state of
+     * the StageManager this screen will stop being displayed.
+     **/
+    class GameOverState: State
     {
         public StateManager m_stateManager { get; set; }
         public int m_stateID { get; set; }

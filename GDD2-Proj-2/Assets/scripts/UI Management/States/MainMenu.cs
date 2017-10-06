@@ -6,12 +6,14 @@ using System.Text;
 namespace UI.UIManagement
 {
     /**
-      * class StateManager implements the management of states of the game.
-      * It will display the states that should be displayed based on inputs
-      * from users and triggers from the game.
+      * class MainMenu implements the state of the game when the start of the game
+      * is loaded. It will display a screen object called "MainMenuScreen" and
+      * update frames as needed. When inputs are triggered to change the state of
+      * the StageManager this screen will stop being displayed.
       **/
-    class StateManager : State
+    class MainMenu : State
     {
+        
         public StateManager m_stateManager { get; set; }
         public int m_stateID { get; set; }
         public bool m_stateLoaded { get; set; }
