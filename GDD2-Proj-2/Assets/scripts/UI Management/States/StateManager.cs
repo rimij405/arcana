@@ -12,28 +12,55 @@ namespace UI.UIManagement
       **/
     class StateManager : State
     {
+        // Reference to the state manager.
         public StateManager m_stateManager { get; set; }
+        // Id of this state.
         public int m_stateID { get; set; }
+        // Bool to check whether this state has finished loading.
         public bool m_stateLoaded { get; set; }
+        // List of screen ids.
         public List<int> m_screenIds { get; set; }
+        // Current screen that is displayed.
         public Screen m_currentScreen { get; set; }
 
+        private List<State> states = new List<State>();
+
+        /**
+          * Initialize will initialize the state manager and its references to the State Objects.
+          **/
         public void Initialize()
         {
 
         }
+
+        /**
+         * Load will load the current state and its screen.
+         **/
         public void Load()
         {
 
         }
+
+        /**
+         * Update is called every frame to update the position of game objects
+         * in the frame.
+         **/
         public void Update(float delta)
         {
 
         }
 
+        /**
+         * Get Screen returns the screen at the specified index.
+         */
         public Screen GetScreen(int index)
         {
-            return null;
+            if(states[index] != null)
+            {
+                return states[index].m_currentScreen;
+            } else {
+                throw new ArgumentOutOfRangeException("Index was out of range of the list of screens");
+            }
         }
     }
 }
