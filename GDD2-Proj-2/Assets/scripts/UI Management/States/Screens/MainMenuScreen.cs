@@ -22,6 +22,12 @@ namespace UI.UIManagement
         public int m_screenResolutionX { get; set; }
         public int m_screenResolutionY { get; set; }
 
+        // Private Data Members
+        private Vector2 m_position;
+        private Vector2 m_dimensions;
+        private float m_timeToLive;
+        private GameObject m_resource;
+
         /**
          * void initialize will be called to initialize this screen object.
          **/

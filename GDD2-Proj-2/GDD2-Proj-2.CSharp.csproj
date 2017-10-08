@@ -70,6 +70,12 @@
     <Compile Include="Assets\scripts\Input Management\InputManager.cs" />
     <Compile Include="Assets\scripts\UI Management\States\Screens\GameoverScreen.cs" />
     <Compile Include="Assets\scripts\UI Management\States\Screens\GameplayScreen.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\GUIElements\GUIButton.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\GUIElements\GUIElement.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\GUIElements\GUIImage.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\GUIElements\GUILabel.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\GUIElements\GUIPanel.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\GUIElements\GUIProgressBar.cs" />
     <Compile Include="Assets\scripts\UI Management\States\Screens\LoadingScreen.cs" />
     <Compile Include="Assets\scripts\UI Management\States\Screens\MainMenuScreen.cs" />
     <Compile Include="Assets\scripts\UI Management\States\Screens\OptionsScreen.cs" />
