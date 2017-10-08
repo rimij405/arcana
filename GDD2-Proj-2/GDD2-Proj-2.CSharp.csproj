@@ -68,6 +68,20 @@
     <Compile Include="Assets\scripts\Game Management\CollisionHandler.cs" />
     <Compile Include="Assets\scripts\Game Management\GameManager.cs" />
     <Compile Include="Assets\scripts\Input Management\InputManager.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\GameoverScreen.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\GameplayScreen.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\LoadingScreen.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\MainMenuScreen.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\OptionsScreen.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\PauseScreen.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\SplashScreen.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\ArenaState.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\GameOverState.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\LoadingState.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\MainMenu.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\Screens\Screen.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\State.cs" />
+    <Compile Include="Assets\scripts\UI Management\States\StateManager.cs" />
     <Compile Include="Assets\scripts\UI Management\UIManager.cs" />
     <Compile Include="Assets\scripts\SystemController.cs" />
   </ItemGroup>
