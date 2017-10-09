@@ -1,11 +1,26 @@
-﻿using System;
+﻿/************************************************
+ * InputManager.cs
+ * 
+ * This file contains implementation for the InputManager class.
+ ************************************************/
+
+/////////////////////
+// Using statements.
+/////////////////////
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Input.InputManager
+namespace Game.Input
 {
-    class InputManager
+    /// <summary>
+    /// Handles input functionality.
+    /// </summary>
+    public class InputManager
     {
+
+        // TODO: Stub.
+
     }
 }
