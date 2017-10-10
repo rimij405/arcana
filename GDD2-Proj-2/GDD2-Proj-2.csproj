@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\Game Management\GameManager.cs" />
     <Compile Include="Assets\Scripts\Game Management\States\ArenaState.cs" />
     <Compile Include="Assets\Scripts\Game Management\States\GameOverState.cs" />
+    <Compile Include="Assets\Scripts\Game Management\States\IState.cs" />
     <Compile Include="Assets\Scripts\Game Management\States\LoadingState.cs" />
     <Compile Include="Assets\Scripts\Game Management\States\MainMenuState.cs" />
     <Compile Include="Assets\Scripts\Game Management\States\State.cs" />
@@ -110,8 +111,10 @@
     <Compile Include="Assets\Scripts\UI Management\GUIElements\GUILabel.cs" />
     <Compile Include="Assets\Scripts\UI Management\GUIElements\GUIPanel.cs" />
     <Compile Include="Assets\Scripts\UI Management\GUIElements\GUIProgressBar.cs" />
+    <Compile Include="Assets\Scripts\UI Management\GUIElements\IGUIElement.cs" />
     <Compile Include="Assets\Scripts\UI Management\Screens\GameoverScreen.cs" />
     <Compile Include="Assets\Scripts\UI Management\Screens\GameplayScreen.cs" />
+    <Compile Include="Assets\Scripts\UI Management\Screens\IScreen.cs" />
     <Compile Include="Assets\Scripts\UI Management\Screens\LoadingScreen.cs" />
     <Compile Include="Assets\Scripts\UI Management\Screens\MainMenuScreen.cs" />
     <Compile Include="Assets\Scripts\UI Management\Screens\OptionsScreen.cs" />
