@@ -23,7 +23,7 @@ namespace Game.States
     /// <para>Implements the state run whenever something is loading.</para>
     /// It will display a screen object called "LoadingScreen" and update frames as needed.
     /// </summary>
-    class LoadingState : State
+    class LoadingState : IState
     {
         #region Data Members
 
@@ -50,7 +50,7 @@ namespace Game.States
         /// <summary>
         /// Reference to the current screen.
         /// </summary>
-        public Screen m_currentScreen { get; set; }
+        public IScreen m_currentScreen { get; set; }
 
         #endregion
 
@@ -96,7 +96,7 @@ namespace Game.States
         /// </summary>
         /// <param name="id">Screen ID associated with desired Screen object.</param>
         /// <returns></returns>
-        public Screen GetScreen(ScreenID id)
+        public IScreen GetScreen(ScreenID id)
         {
             // TODO: Stub.
             return null;

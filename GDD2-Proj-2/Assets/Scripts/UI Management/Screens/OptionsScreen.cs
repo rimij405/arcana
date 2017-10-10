@@ -22,7 +22,7 @@ namespace Game.UI.Screens
      * items like turning on and off sounds and changing resolution and 
      * possibly button mappings.
      **/
-    class OptionsScreen : Screen
+    class OptionsScreen : IScreen
     {
 
         #region Data Members

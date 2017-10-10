@@ -1,7 +1,7 @@
 ﻿/************************************************
- * GameoverState.cs
+ * IState.cs
  * 
- * This file contains implementation for the State subclass: GameoverState.
+ * This file contains implementation for the State interface.
  ************************************************/
 
 /////////////////////
@@ -15,15 +15,11 @@ using Game.UI.Screens;
 
 namespace Game.States
 {
-    /////////////////////
-    // Class declaration.
-    /////////////////////
 
     /// <summary>
-    /// <para>Implements the end of game state.</para>
-    ///  It will display a screen object called "GameoverScreen" and update frames as needed. When inputs are triggered to change the state of the StageManager this screen will stop being displayed.
+    /// An interface describing the fields and methods that will be implemented by each of the State classes.
     /// </summary>
-    public class GameoverState : IState
+    public interface IState
     {
 
         #region Data Members
@@ -31,56 +27,47 @@ namespace Game.States
         /// <summary>
         /// Reference to the state manager.
         /// </summary>
-        public StateManager m_stateManager { get; set; }
+        StateManager m_stateManager { get; set; }
 
         /// <summary>
         /// This State's ID.
         /// </summary>
-        public StateID m_stateID { get; set; }
+        StateID m_stateID { get; set; }
 
         /// <summary>
         /// Flag checks if this state has finished loading.
         /// </summary>
-        public bool m_stateLoaded { get; set; }
+        bool m_stateLoaded { get; set; }
 
         /// <summary>
         /// Ordered list of Screen ID's used for this state.
         /// </summary>
-        public List<ScreenID> m_screenIds { get; set; }
+        List<ScreenID> m_screenIds { get; set; }
 
         /// <summary>
         /// Reference to the current screen.
         /// </summary>
-        public IScreen m_currentScreen { get; set; }
+        IScreen m_currentScreen { get; set; }
 
         #endregion
 
         #region Service Methods
 
         /// <summary>
-        /// Initialize the GameoverState with its respective screen and game objects.
+        /// Initialize the LoadingState with its respective screen and game objects.
         /// </summary>    
-        public void Initialize()
-        {
-            // TODO: Stub.
-        }
+        void Initialize();
 
         /// <summary>
-        /// Load the GameoverState and its Screen.
+        /// Load the LoadingState and its Screen.
         /// </summary>
-        public void Load()
-        {
-            // TODO: Stub.
-        }
+        void Load();
 
         /// <summary>
-        /// Update GameoverState dependencies.
+        /// Update LoadingState dependencies.
         /// </summary>
         /// <param name="delta">Elapsed time since last frame (in seconds).</param>
-        public void Update(float delta)
-        {
-            // TODO: Stub.
-        }
+        void Update(float delta);
 
         #endregion
 
@@ -89,7 +76,7 @@ namespace Game.States
         // TODO: Stub.
 
         #endregion
-
+        
         #region Accessor Methods
 
         /// <summary>
@@ -97,11 +84,7 @@ namespace Game.States
         /// </summary>
         /// <param name="id">Screen ID associated with desired Screen object.</param>
         /// <returns></returns>
-        public IScreen GetScreen(ScreenID id)
-        {
-            // TODO: Stub.
-            return null;
-        }
+        IScreen GetScreen(ScreenID id);
 
         #endregion
 

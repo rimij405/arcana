@@ -40,7 +40,7 @@ namespace Game.UI.Screens
         /// <summary>
         /// Map of all Screen instances, with their associated ID's.
         /// </summary> 
-        private Dictionary<ScreenID, Screen> m_screens { get; set; }
+        private Dictionary<ScreenID, IScreen> m_screens { get; set; }
 
         #endregion
 
@@ -92,7 +92,7 @@ namespace Game.UI.Screens
         /// </summary>
         /// <param name="id">Desired Screen's ID.</param>
         /// <returns>Returns Screen associated with the input ID, if it exists.</returns>
-        public Screen GetScreen(ScreenID id)
+        public IScreen GetScreen(ScreenID id)
         {
             if (m_screens != null && m_screens.ContainsKey(id))
             {
@@ -108,7 +108,7 @@ namespace Game.UI.Screens
         /// Returns the Dictionary mapping ScreenIDs to Screens.
         /// </summary>
         /// <returns>Returns <see cref="m_screens"/>.</returns>
-        public Dictionary<ScreenID, Screen> GetScreens()
+        public Dictionary<ScreenID, IScreen> GetScreens()
         {
             return m_screens;
         }

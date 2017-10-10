@@ -21,7 +21,7 @@ namespace Game.UI.Screens
      * It will have a list of places to navigate to. For now the list will be
      * "Play", "Options", "Exit".
      **/
-    class HomeScreen : Screen
+    class HomeScreen : IScreen
     {
 
         #region Data Members

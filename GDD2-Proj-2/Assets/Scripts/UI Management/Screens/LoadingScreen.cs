@@ -21,7 +21,7 @@ namespace Game.UI.Screens
      * Any time where the players may be waiting for more than a second or so this screen
      * should be displayed to let the user know what is happening.
      **/
-    class LoadingScreen : Screen
+    class LoadingScreen : IScreen
     {
 
         #region Data Members

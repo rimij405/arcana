@@ -18,7 +18,7 @@ namespace Game.UI.Elements
     /// <summary>
     /// Button that can be interacted with by players.
     /// </summary>
-    public class GUIButton : GUIElement
+    public class GUIButton : IGUIElements
     {
 
         #region Data Members
@@ -54,7 +54,7 @@ namespace Game.UI.Elements
         /// <summary>
         /// Children that may be GUI elements.
         /// </summary>
-        private List<GUIElement> m_elements;
+        private List<IGUIElements> m_elements;
 
         #endregion
 

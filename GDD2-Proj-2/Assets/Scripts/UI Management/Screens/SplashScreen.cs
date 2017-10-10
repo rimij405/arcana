@@ -21,7 +21,7 @@ namespace Game.UI.Screens
      * It will say something along the lines of "Press any key to continue"
      * and then bring up the main menu screen.
      **/
-    class SplashScreen : Screen
+    class SplashScreen : IScreen
     {
 
         #region Data Members

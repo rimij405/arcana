@@ -23,7 +23,7 @@ namespace Game.States
     /// <para>Implements the main gameplay state.</para>
     /// It will display a screen object called "GamePlayScreen" and update frames as needed. When inputs are triggered to change the state of the StageManager this screen will stop being displayed.
     /// </summary>
-    public class ArenaState : State
+    public class ArenaState : IState
     {
 
         #region Data Members
@@ -51,7 +51,7 @@ namespace Game.States
         /// <summary>
         /// Reference to the current screen.
         /// </summary>
-        public Screen m_currentScreen { get; set; }
+        public IScreen m_currentScreen { get; set; }
 
         #endregion
 
@@ -97,7 +97,7 @@ namespace Game.States
         /// </summary>
         /// <param name="id">Screen ID associated with desired Screen object.</param>
         /// <returns></returns>
-        public Screen GetScreen(ScreenID id)
+        public IScreen GetScreen(ScreenID id)
         {
             // TODO: Stub.
             return null;

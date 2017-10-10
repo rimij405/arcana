@@ -54,7 +54,7 @@ namespace Game.UI.Elements
         /// <summary>
         /// Children that may be GUI elements.
         /// </summary>
-        private List<GUIElement> m_elements;
+        private List<IGUIElements> m_elements;
 
         #endregion
         

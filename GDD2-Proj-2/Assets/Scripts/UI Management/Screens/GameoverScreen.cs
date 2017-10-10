@@ -23,7 +23,7 @@ namespace Game.UI.Screens
      **/
 
 
-    class GameoverScreen : Screen
+    class GameoverScreen : IScreen
     {
 
         #region Data Members

@@ -21,7 +21,7 @@ namespace Game.UI.Screens
      * is being played. This is where the mages and stage are displayed
      * and objects are updated based on user inputs.
      **/
-    class GameplayScreen : Screen
+    class GameplayScreen : IScreen
     {
         #region Data Members
 

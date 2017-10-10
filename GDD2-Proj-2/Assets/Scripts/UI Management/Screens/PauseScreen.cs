@@ -22,7 +22,7 @@ namespace Game.UI.Screens
      * GameplayScreen and gives the players the option to end the game or go to the options
      * menu. We can also include the controls on this screen.
      **/
-    class PauseScreen: Screen
+    class PauseScreen: IScreen
     {
 
         #region Data Members

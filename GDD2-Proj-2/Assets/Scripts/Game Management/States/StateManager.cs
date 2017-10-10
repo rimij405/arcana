@@ -40,12 +40,12 @@ namespace Game.States
         /// <summary>
         /// Map of all State instances, with their associated ID's.
         /// </summary>
-        public Dictionary<StateID, State> m_states { get; set; }
+        public Dictionary<StateID, IState> m_states { get; set; }
         
         /// <summary>
         /// Active state.
         /// </summary>
-        public State m_currentState { get; set; }
+        public IState m_currentState { get; set; }
 
         #endregion
 
