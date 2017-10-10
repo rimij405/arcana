@@ -1,7 +1,7 @@
 ﻿/************************************************
- * GUILabel.cs
+ * IGUIElement.cs
  * 
- * Contains implementation for GUILabel.
+ * Contains implementation for the IGUIElement interface.
  ************************************************/
 
 /////////////////////
@@ -16,46 +16,34 @@ using UnityEngine;
 namespace Game.UI.Elements
 {
     /// <summary>
-    /// IGUIElement that displays text.
+    /// Interface of the GUI objects that screens will be creating during gameplay.
     /// </summary>
-    class GUILabel : IGUIElement
+    interface IGUIElement
     {
 
         #region Data Members
-
-        /////////////////////
-        // Public data fields.
-        /////////////////////
-
+        
         /// <summary>
         /// Position of the IGUIElement.
         /// </summary>
-        public Vector2 m_position { get; set; }
+        Vector2 m_position { get; set; }
 
         /// <summary>
         /// Depth level.
         /// </summary>
-        public int m_depth { get; set; }
+        int m_depth { get; set; }
 
         /// <summary>
         /// Element visibility.
         /// </summary>
-        public bool m_visible { get; set; }
+        bool m_visible { get; set; }
 
         /// <summary>
         /// Enable flag.
         /// </summary>
-        public bool m_enabled { get; set; }
-
-        /////////////////////
-        // Private data fields.
-        /////////////////////
-
-        /// <summary>
-        /// Children that may be GUI elements.
-        /// </summary>
-        private List<IGUIElement> m_elements;
-
+        bool m_enabled { get; set; }
+        
         #endregion
+
     }
 }

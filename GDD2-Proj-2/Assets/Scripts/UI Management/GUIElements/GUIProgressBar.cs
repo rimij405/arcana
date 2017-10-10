@@ -18,7 +18,7 @@ namespace Game.UI.Elements
     /// <summary>
     /// Loading bar that is displayed on the loading screen.
     /// </summary>
-    class GUIProgressBar
+    class GUIProgressBar : IGUIElement
     {
 
         #region Data Members
@@ -28,7 +28,7 @@ namespace Game.UI.Elements
         /////////////////////
 
         /// <summary>
-        /// Position of the GUIElement.
+        /// Position of the IGUIElement.
         /// </summary>
         public Vector2 m_position { get; set; }
 
@@ -54,7 +54,7 @@ namespace Game.UI.Elements
         /// <summary>
         /// Children that may be GUI elements.
         /// </summary>
-        private List<GUIElement> m_elements;
+        private List<IGUIElement> m_elements;
 
         #endregion
         

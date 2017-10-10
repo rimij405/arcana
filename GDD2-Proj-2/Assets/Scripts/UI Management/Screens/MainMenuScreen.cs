@@ -16,12 +16,10 @@ using Game.Resources;
 
 namespace Game.UI.Screens
 {
-    /**
-     * class HomeScreen is the screen that is displayed after the splash screen.
-     * It will have a list of places to navigate to. For now the list will be
-     * "Play", "Options", "Exit".
-     **/
-    class HomeScreen : Screen
+    /// <summary>
+    /// IScreen displayed as the main menu. It should have options for Play, Options, and Exit. Displayed after splash screen.
+    /// </summary>
+    class HomeScreen : IScreen
     {
 
         #region Data Members
@@ -31,22 +29,22 @@ namespace Game.UI.Screens
         /////////////////////
 
         /// <summary>
-        /// Determines if Screen is initialized.
+        /// Determines if IScreen is initialized.
         /// </summary>
         public bool m_initialized { get; set; }
 
         /// <summary>
-        /// Determines if Screen's resources are loaded.
+        /// Determines if IScreen's resources are loaded.
         /// </summary>
         public bool m_loaded { get; set; }
 
         /// <summary>
-        /// Screen resolution (x-axis).
+        /// IScreen resolution (x-axis).
         /// </summary>
         public int m_screenResolutionX { get; set; }
 
         /// <summary>
-        /// Screen resolution (y-axis).
+        /// IScreen resolution (y-axis).
         /// </summary>
         public int m_screenResolutionY { get; set; }
 
@@ -80,7 +78,7 @@ namespace Game.UI.Screens
         #region Service Methods
 
         /// <summary>
-        /// Initialize this Screen object.
+        /// Initialize this IScreen object.
         /// </summary>
         public void Initialize()
         {
@@ -90,7 +88,7 @@ namespace Game.UI.Screens
         }
 
         /// <summary>
-        /// Load this Screen object's resources.
+        /// Load this IScreen object's resources.
         /// </summary>
         public void Load()
         {

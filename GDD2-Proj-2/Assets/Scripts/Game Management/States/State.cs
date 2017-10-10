@@ -1,7 +1,7 @@
 ﻿/************************************************
- * State.cs
+ * IState.cs
  * 
- * This file contains implementation for the State interface.
+ * This file contains implementation for the IState interface.
  ************************************************/
 
 /////////////////////
@@ -17,9 +17,9 @@ namespace Game.States
 {
 
     /// <summary>
-    /// An interface describing the fields and methods that will be implemented by each of the State classes.
+    /// An interface describing the fields and methods that will be implemented by each of the IState classes.
     /// </summary>
-    public interface State
+    public interface IState
     {
 
         #region Data Members
@@ -30,7 +30,7 @@ namespace Game.States
         StateManager m_stateManager { get; set; }
 
         /// <summary>
-        /// This State's ID.
+        /// This IState's ID.
         /// </summary>
         StateID m_stateID { get; set; }
 
@@ -40,14 +40,14 @@ namespace Game.States
         bool m_stateLoaded { get; set; }
 
         /// <summary>
-        /// Ordered list of Screen ID's used for this state.
+        /// Ordered list of IScreen ID's used for this state.
         /// </summary>
         List<ScreenID> m_screenIds { get; set; }
 
         /// <summary>
         /// Reference to the current screen.
         /// </summary>
-        Screen m_currentScreen { get; set; }
+        IScreen m_currentScreen { get; set; }
 
         #endregion
 
@@ -59,7 +59,7 @@ namespace Game.States
         void Initialize();
 
         /// <summary>
-        /// Load the LoadingState and its Screen.
+        /// Load the LoadingState and its IScreen.
         /// </summary>
         void Load();
 
@@ -80,11 +80,11 @@ namespace Game.States
         #region Accessor Methods
 
         /// <summary>
-        /// Get Screen returns the screen at the specified index. Since this is not the StateManager this method will not be needed.
+        /// Get IScreen returns the screen at the specified index. Since this is not the StateManager this method will not be needed.
         /// </summary>
-        /// <param name="id">Screen ID associated with desired Screen object.</param>
+        /// <param name="id">IScreen ID associated with desired IScreen object.</param>
         /// <returns></returns>
-        Screen GetScreen(ScreenID id);
+        IScreen GetScreen(ScreenID id);
 
         #endregion
 

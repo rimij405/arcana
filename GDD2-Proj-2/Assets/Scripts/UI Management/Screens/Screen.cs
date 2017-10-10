@@ -1,7 +1,7 @@
 ﻿/************************************************
- * Screen.cs
+ * IScreen.cs
  * 
- * Contains implementation for the Screen interface.
+ * Contains implementation for the IScreen interface.
  ************************************************/
 
 /////////////////////
@@ -17,9 +17,9 @@ namespace Game.UI.Screens
 {
 
     /// <summary>
-    /// Defines the public data members and class references for each Screen type classes.
+    /// Defines the public data members and class references for each IScreen type classes.
     /// </summary>
-    public interface Screen
+    public interface IScreen
     {
 
         #region Data Members
@@ -29,22 +29,22 @@ namespace Game.UI.Screens
         /////////////////////
 
         /// <summary>
-        /// Determine if Screen object is initialized.
+        /// Determine if IScreen object is initialized.
         /// </summary>
         bool m_initialized { get; set; }
         
         /// <summary>
-        /// Determine if Screen object resources are loaded.
+        /// Determine if IScreen object resources are loaded.
         /// </summary>
         bool m_loaded { get; set; }
 
         /// <summary>
-        /// Screen resolution (x-axis).
+        /// IScreen resolution (x-axis).
         /// </summary>
         int m_screenResolutionX { get; set; }
 
         /// <summary>
-        /// Screen resolution (y-axis).
+        /// IScreen resolution (y-axis).
         /// </summary>
         int m_screenResolutionY { get; set; }
 
@@ -53,12 +53,12 @@ namespace Game.UI.Screens
         #region Service Methods
         
         /// <summary>
-        /// Initialize this Screen object.
+        /// Initialize this IScreen object.
         /// </summary>
         void Initialize();
         
         /// <summary>
-        /// Load this Screen object's resources.
+        /// Load this IScreen object's resources.
         /// </summary>
         void Load();
         

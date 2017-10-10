@@ -31,16 +31,16 @@ namespace Game.UI.Screens
     }
 
     /// <summary>
-    /// Creates and manages the Screen objects.
+    /// Creates and manages the IScreen objects.
     /// </summary>
     public class ScreenManager
     {
         #region Data Members
 
         /// <summary>
-        /// Map of all Screen instances, with their associated ID's.
+        /// Map of all IScreen instances, with their associated ID's.
         /// </summary> 
-        private Dictionary<ScreenID, Screen> m_screens { get; set; }
+        private Dictionary<ScreenID, IScreen> m_screens { get; set; }
 
         #endregion
 
@@ -57,7 +57,7 @@ namespace Game.UI.Screens
         }
 
         /// <summary>
-        /// Load the current State.
+        /// Load the current IState.
         /// </summary>
         public void Load()
         {
@@ -88,11 +88,11 @@ namespace Game.UI.Screens
         #region Accessor Methods
 
         /// <summary>
-        /// Get Screen returns the screen at the specified ID.
+        /// Get IScreen returns the screen at the specified ID.
         /// </summary>
-        /// <param name="id">Desired Screen's ID.</param>
-        /// <returns>Returns Screen associated with the input ID, if it exists.</returns>
-        public Screen GetScreen(ScreenID id)
+        /// <param name="id">Desired IScreen's ID.</param>
+        /// <returns>Returns IScreen associated with the input ID, if it exists.</returns>
+        public IScreen GetScreen(ScreenID id)
         {
             if (m_screens != null && m_screens.ContainsKey(id))
             {
@@ -108,7 +108,7 @@ namespace Game.UI.Screens
         /// Returns the Dictionary mapping ScreenIDs to Screens.
         /// </summary>
         /// <returns>Returns <see cref="m_screens"/>.</returns>
-        public Dictionary<ScreenID, Screen> GetScreens()
+        public Dictionary<ScreenID, IScreen> GetScreens()
         {
             return m_screens;
         }

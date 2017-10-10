@@ -1,7 +1,7 @@
 ﻿/************************************************
  * ArenaState.cs
  * 
- * This file contains implementation for the State subclass: ArenaState.
+ * This file contains implementation for the IState subclass: ArenaState.
  ************************************************/
 
 /////////////////////
@@ -23,7 +23,7 @@ namespace Game.States
     /// <para>Implements the main gameplay state.</para>
     /// It will display a screen object called "GamePlayScreen" and update frames as needed. When inputs are triggered to change the state of the StageManager this screen will stop being displayed.
     /// </summary>
-    public class ArenaState : State
+    public class ArenaState : IState
     {
 
         #region Data Members
@@ -34,7 +34,7 @@ namespace Game.States
         public StateManager m_stateManager { get; set; }
                 
         /// <summary>
-        /// This State's ID.
+        /// This IState's ID.
         /// </summary>
         public StateID m_stateID { get; set; }
 
@@ -44,14 +44,14 @@ namespace Game.States
         public bool m_stateLoaded { get; set; }
         
         /// <summary>
-        /// Ordered list of Screen ID's used for this state.
+        /// Ordered list of IScreen ID's used for this state.
         /// </summary>
         public List<ScreenID> m_screenIds { get; set; }
 
         /// <summary>
         /// Reference to the current screen.
         /// </summary>
-        public Screen m_currentScreen { get; set; }
+        public IScreen m_currentScreen { get; set; }
 
         #endregion
 
@@ -66,7 +66,7 @@ namespace Game.States
         }
 
         /// <summary>
-        /// Load the ArenaState and its Screen.
+        /// Load the ArenaState and its IScreen.
         /// </summary>
         public void Load()
         {
@@ -93,11 +93,11 @@ namespace Game.States
         #region Accessor Methods
         
         /// <summary>
-        /// Get Screen returns the screen at the specified index. Since this is not the StateManager this method will not be needed.
+        /// Get IScreen returns the screen at the specified index. Since this is not the StateManager this method will not be needed.
         /// </summary>
-        /// <param name="id">Screen ID associated with desired Screen object.</param>
+        /// <param name="id">IScreen ID associated with desired IScreen object.</param>
         /// <returns></returns>
-        public Screen GetScreen(ScreenID id)
+        public IScreen GetScreen(ScreenID id)
         {
             // TODO: Stub.
             return null;
